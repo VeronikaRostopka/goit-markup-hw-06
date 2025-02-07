@@ -348,7 +348,6 @@ a {
   background-size: cover;
   padding: 72px 0;
 }
-
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -2122,6 +2121,35 @@ body {
   .footer-logo,
   .footer-text,
   .footer-subscribe-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .features .subtitle {
+    text-align: left;
+  }
+
+  /* Змінений селектор для портфоліо */
+  .portfolio .section-title {
+    text-align: center;
+  }
+
+  /* Для карток портфоліо - заголовки і текст */
+  .portfolio .portfolio-content .subtitle,
+  .portfolio .portfolio-content .text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* Для секції features */
+  .features .subtitle {
+    text-align: left;
+  }
+
+  /* Для карток портфоліо */
+  .portfolio .portfolio-content .subtitle {
     text-align: left;
   }
 }
