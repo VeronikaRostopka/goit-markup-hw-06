@@ -772,9 +772,9 @@ img {
 /* Modal Window */
 .modal {
   position: absolute;
-  top: 50%;
+  top: 80px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
@@ -2130,15 +2130,25 @@ body {
     text-align: left;
   }
 
-  /* Змінений селектор для портфоліо */
+  .portfolio .portfolio-content .subtitle,
+  .portfolio .portfolio-content .text {
+    text-align: left;
+  }
+
   .portfolio .section-title {
     text-align: center;
   }
 
-  /* Для карток портфоліо - заголовки і текст */
-  .portfolio .portfolio-content .subtitle,
-  .portfolio .portfolio-content .text {
-    text-align: left;
+  .portfolio-list {
+    row-gap: 40px;
+    column-gap: 24px;
+  }
+
+  .modal {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
