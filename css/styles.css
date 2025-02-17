@@ -1509,12 +1509,21 @@ img {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .subtitle {
-    text-align: left;
+  .features-subtitle,
+  .features .subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left !important;
+    margin-bottom: 8px;
   }
 
-  .text {
-    text-align: left;
+  .features-text,
+  .features .text {
+    text-align: left !important;
   }
 
   .features-icon-container {
@@ -2083,40 +2092,7 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-  .features .subtitle {
-    text-align: left;
-  }
-
-  .portfolio .portfolio-content .subtitle,
-  .portfolio .portfolio-content .text {
-    text-align: left;
-  }
-
-  .portfolio .section-title {
-    text-align: center;
-  }
-
-  .portfolio-list {
-    row-gap: 40px;
-    column-gap: 24px;
-  }
-
-  .modal {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  /* Для секції features */
-  .features .subtitle {
-    text-align: left;
-  }
-
-  /* Для карток портфоліо */
-  .portfolio .portfolio-content .subtitle {
-    text-align: left;
+  .features-item .text {
+    text-align: left !important;
   }
 }
