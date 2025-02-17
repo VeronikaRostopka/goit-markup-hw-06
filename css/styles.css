@@ -348,7 +348,6 @@ a {
   background-size: cover;
   padding: 72px 0;
 }
-
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -773,9 +772,9 @@ img {
 /* Modal Window */
 .modal {
   position: absolute;
-  top: 50%;
+  top: 80px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
@@ -2080,5 +2079,44 @@ body {
     margin-bottom: 16px;
     padding-left: 16px;
     align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .features .subtitle {
+    text-align: left;
+  }
+
+  .portfolio .portfolio-content .subtitle,
+  .portfolio .portfolio-content .text {
+    text-align: left;
+  }
+
+  .portfolio .section-title {
+    text-align: center;
+  }
+
+  .portfolio-list {
+    row-gap: 40px;
+    column-gap: 24px;
+  }
+
+  .modal {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* Для секції features */
+  .features .subtitle {
+    text-align: left;
+  }
+
+  /* Для карток портфоліо */
+  .portfolio .portfolio-content .subtitle {
+    text-align: left;
   }
 }
