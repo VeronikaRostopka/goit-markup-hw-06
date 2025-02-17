@@ -2140,6 +2140,33 @@ body {
     cursor: pointer;
   }
 
+  .features .subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+
+  .features .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: left;
+  }
+
+  .team .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+  }
+
   .menu-toggle svg {
     fill: #2e2f42;
   }
@@ -2171,7 +2198,15 @@ body {
   }
 
   .footer-form-input {
-    width: 100%;
+    width: 288px;
+    height: 40px;
+    margin: 0 auto;
+  }
+
+  .footer-form-btn {
+    width: 165px;
+    height: 40px;
+    margin: 0 auto;
   }
 
   .mobile-menu-social-list {
