@@ -56,9 +56,9 @@ a {
 }
 
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Мобільна версія */
@@ -1176,7 +1176,7 @@ html {
   height: 22px;
 }
 
-/* Планшети (від 768px) */
+/* Планшет (від 768px) */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -1299,18 +1299,9 @@ img {
     align-items: flex-start;
   }
 
-  .footer-logo {
-    text-align: left;
-  }
-
-  .footer-text {
-    text-align: left;
-  }
-
-  .footer-social-text {
-    text-align: left;
-  }
-
+  .footer-logo,
+  .footer-text,
+  .footer-social-text,
   .footer-form-text {
     text-align: left;
   }
@@ -1942,23 +1933,6 @@ body {
   }
 }
 
-/* Планшетна версія футера */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .footer-left-column,
-  .footer-social-media,
-  .footer-subscribe {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* Мобільне меню контакти */
 .mobile-contacts {
   margin-bottom: 48px;
@@ -2035,7 +2009,8 @@ body {
   }
 
   .footer-form {
-    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 24px;
   }
 
@@ -2048,80 +2023,62 @@ body {
   }
 }
 
-/* Планшетна версія (768px - 1157px) */
+/* Планшетна версія футера (768px - 1157px) */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* Стилі для команди */
-  .team-list {
+  .footer {
+    padding: 96px 0;
+  }
+
+  .container.footer-container {
+    width: 552px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 64px 24px;
-    justify-content: center;
-  }
-
-  .team-item {
-    width: calc((100% - 24px) / 2);
-    margin: 0;
-  }
-
-  .team-item .subtitle {
-    text-align: center;
-  }
-
-  .team-item .text {
-    text-align: center;
-  }
-
-  /* Стилі для секції Features */
-  .features .subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11111;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: left;
-  }
-
-  .features .text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    text-align: left;
-  }
-
-  /* Стилі для футера */
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 108px;
-    row-gap: 72px;
-    column-gap: 24px;
+    gap: 72px 24px;
   }
 
   .footer-logo-container {
     width: 264px;
   }
 
+  .footer-social {
+    width: 208px;
+  }
+
   .footer-subscribe {
-    width: 264px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    margin-left: 16px; /* Додано відступ для форми */
   }
 
   .footer-form-input {
     width: 264px;
-  }
-
-  .footer-social {
-    margin-left: auto;
+    height: 40px;
   }
 
   .footer-form-btn {
-    margin-left: auto;
+    width: 165px;
+    height: 40px;
   }
 
   .footer-logo,
   .footer-text,
-  .footer-subscribe-text {
+  .footer-social-text,
+  .footer-form-text {
     text-align: left;
+  }
+
+  .footer-form-text {
+    margin-bottom: 16px;
+    padding-left: 16px;
+    align-self: flex-start;
   }
 }
